@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+
     <!-- style -->
     <link rel="stylesheet" href="/css/style.css">
     
@@ -44,6 +49,32 @@
       </div>
     </header> 
 
-    <section class="banner-section"></section>
+    <section class="slider-section">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/banner1.png" alt="">
+            <div class="slider-txt">
+              <div>아삭아삭한 제철 복숭아</div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img src="/img/banner2.png" alt=""></div>
+          <div class="swiper-slide"><img src="/img/banner3.png" alt=""></div>
+          <div class="swiper-slide"><img src="/img/banner4.png" alt=""></div>
+        </div>
+        
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    
+    <!-- swider script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    
+    <!-- main script -->
+    <script src="/js/main.js"></script>
   </body>
 </html>
