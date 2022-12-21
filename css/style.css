@@ -3,22 +3,7 @@
 ol, ul {list-style: none;}
 a {text-decoration: none; color: black;}
 
-/* style css */
-
-/* header section */
-.header .header-container {width: 100%; height: auto; max-width: 1280px; margin: auto;}
-.header .login-header {display: flex; justify-content: flex-end; column-gap: 2rem; margin-top: .5rem;} 
-.header .login-header .login {display: flex; align-items: center; column-gap: 2rem; font-size: 12px; color: #7a7a7a;}
-
-
-.header .login-header .icon i {font-size: 23px;}
-
-.header .header-nav {display: flex; justify-content: space-between;}
-.header .nav-menu {display: flex; column-gap: 3rem; padding: 2rem 0; font-weight: 700; font-size: 17px;} 
-
-/* slider section */
-.swiper {width: 100%; height: 100%}
-
+/* swiper slide */
 .swiper-slide {text-align: center;font-size: 18px;background: #fff;
 /* Center slide text vertically */
     display: -webkit-box;
@@ -34,7 +19,27 @@ a {text-decoration: none; color: black;}
     -webkit-align-items: center;
     align-items: center;
   }
+  
+.swiper {width: 100%; height: 100%}
 
 .swiper-slide img {display: block;width: 100%;height: 100%;
 object-fit: cover;}
+/* style css */
 
+/* header section */
+.header .header-container {width: 100%; height: auto; max-width: 1280px; margin: auto;}
+.header .login-header {display: flex; justify-content: flex-end; column-gap: 2rem; margin-top: .5rem;} 
+.header .login-header .login {display: flex; align-items: center; column-gap: 2rem; font-size: 12px; color: #7a7a7a;}
+
+
+.header .login-header .icon i {font-size: 23px;}
+
+.header .header-nav {display: flex; justify-content: space-between;}
+.header .nav-menu {display: flex; column-gap: 3rem; padding: 2rem 0; font-weight: 700; font-size: 17px;} 
+
+/* slider section */
+
+
+.slider-section .swiper-btn {width: 60px; height: 60px; border: 1px solid #fff; border-radius: 50%; margin: 0 1rem;}
+.slider-section .swiper-btn:hover {width: 60px; height: 60px; opacity: .3; background: #fff;  z-index: 1; }
+.swiper-button-next:after, .swiper-button-prev:after {color: #fff; font-size: 1rem; z-index:10;}
