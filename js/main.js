@@ -12,9 +12,8 @@ var swiper = new Swiper(".mySwiper", {
   // },
   // loop: false,
   // loopAdditionalSlides: 1,
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  //     dynamicBullets: true,
-  //   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
