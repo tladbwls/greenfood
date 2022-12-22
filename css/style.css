@@ -3,6 +3,23 @@
 ol, ul {list-style: none;}
 a {text-decoration: none; color: black;}
 
+/* common style */
+.title-box {width: 100%; height: auto; max-width: 1240px; margin: auto; padding-top: 5rem; padding-bottom: 3.5rem;}
+.title-box > h2 {font-size: 30px; font-weight: 700; padding-bottom: 1.5rem;}
+.title-box > div {width: 100%; height: 3px; max-width: 1240px;  border: 2px solid #000; background: #000;}
+
+.img-boxes {display: flex; gap: 1.5rem;}
+.img-boxes .img-box {width: 25%; height: auto;}
+.img-boxes .img-box img {width: 100%; height: auto; object-fit: cover;}
+
+.new-txts {display: flex; flex-direction: column; row-gap: .25rem; padding-top: 20px;}
+ .new-txts .name {font-size: 15px; font-weight: 400;}
+
+.new-txts .price-box { display: flex; align-items: center; gap: .25rem;}
+.new-txts .price-box .sale {font-size: 18px; font-weight: 700; color: red; }
+.new-txts .price-box .price-1 {font-size: 18px; font-weight: 700;}
+.new-txts .price-box .price-2 {font-size: .82em; text-decoration: line-through; color: #555;} 
+
 /* swiper slide */
 .swiper-slide {text-align: center;font-size: 18px;background: #fff;
 /* Center slide text vertically */
@@ -38,8 +55,6 @@ object-fit: cover;}
 .header .nav-menu {display: flex; column-gap: 3rem;  font-weight: 700; font-size: 17px;} 
 
 /* slider section */
-
-
 .slider-section .swiper-slider {position: relative; width: 100%; height: auto;}
 .slider-section .swiper-btn {width: 60px; height: 60px; border: 1px solid #fff; border-radius: 50%; margin: 0 1rem;}
 .slider-section .swiper-btn:hover {width: 60px; height: 60px; _opacity: .3; background: rgba(255,255,255,0.3)}
@@ -47,12 +62,21 @@ object-fit: cover;}
 
 .slider-section .black-box {width: 100%; height: 100vh; position: absolute; background: black; opacity: .3;}
 
-.slider-section .slider-txts {position: absolute; color: white; display: flex; flex-direction: column; align-items: flex-start; }
-.slider-section .slider-txts .text-1 {font-weight: 900; font-size: 30px;}
-.slider-section .slider-txts .text-2 {font-weight: 300; font-size: 30px;}
-.slider-section .slider-txts .text-3 {font-weight: 500; font-size: 15px; padding: 2rem 0;}
-.slider-section .slider-txts .text-4 {font-weight: 400; font-size: 15px;}
+.slider-section .slider-txts {position: absolute; color: white; display: flex; flex-direction: column; align-items: flex-start; margin: auto;}
+.slider-section .slider-txts .text-1 {font-weight: 900; font-size: 50px;}
+.slider-section .slider-txts .text-2 {font-weight: 300; font-size: 50px;}
+.slider-section .slider-txts .text-3 {font-weight: 500; font-size: 20px; padding: 2rem 0;}
+.slider-section .slider-txts .text-4 {font-weight: 400; font-size: 20px;}
 
 
 .swiper-pagination-bullet { width: 40px; height: 5px; background: rgba(255,255,255,0.7); border-radius: 2px;}
 .swiper-pagination-bullet-active { width: 40px; transition: width .5s; border-radius: 2px; background: #fff; border: 1px solid transparent; }
+
+/* new section style */
+.new-section {width: 100%; height: auto; max-width: 1240px; margin: auto;}
+
+/* MD section */
+.MD-section {width: 100%; height: auto; background: rgb(243, 243, 243);}
+.MD-section .MD-container  {width: 100%; height: auto; max-width: 1240px; display: flex; margin: auto;}
+.MD-section .MD-container img {width: 50%;}
+.MD-section .MD-container .MD-box {width: 50%;}
