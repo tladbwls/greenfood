@@ -88,5 +88,18 @@ object-fit: cover;}
 .MD-section .MD-container .MD-item .item-img img {width: 100%; border-radius: 1rem;}
 
 /* recomend section */
-.recomend-section {width: 100%; height: auto; max-width: 1240px;}
+.recomend-section {width: 100%; height: auto; max-width: 1240px; margin: auto; padding: 5rem 0;}
+
+.recomend-section .recomend-container {width: 100%; height: auto; display: flex; justify-content: center; align-items: center;}
+.recomend-section .recomend-txt {width: 30%; height: auto; }
+.recomend-section .recomend-txt p {font-size: 40px; font-weight: 700;} 
+.recomend-section .new-txts .name {text-align: left;}
+
+.recomend-section .recomend-swiper {width: 70%; height: auto; }
+
+.recomend-section .recomend-btn {margin-top: 3rem;}
+.recomend-section .recomend-btn a {border: 1px solid black; padding: 10px 20px; }
+
+.recomend-section .swiper-wrapper {padding-bottom: 2rem;}
+
 
