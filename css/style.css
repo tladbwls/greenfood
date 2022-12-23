@@ -73,10 +73,20 @@ object-fit: cover;}
 .swiper-pagination-bullet-active { width: 40px; transition: width .5s; border-radius: 2px; background: #fff; border: 1px solid transparent; }
 
 /* new section style */
-.new-section {width: 100%; height: auto; max-width: 1240px; margin: auto;}
+.new-section {width: 100%; height: auto; max-width: 1240px; margin: auto; padding-bottom: 5rem;}
 
 /* MD section */
-.MD-section {width: 100%; height: auto; background: rgb(243, 243, 243);}
-.MD-section .MD-container  {width: 100%; height: auto; max-width: 1240px; display: flex; margin: auto;}
-.MD-section .MD-container img {width: 50%;}
+.MD-section {width: 100%; height: auto; background: #efefef;}
+.MD-section .MD-container  {width: 100%; height: auto; max-width: 1240px; display: flex; margin: auto;   padding-bottom: 5rem;}
+.MD-section .MD-container .rich-img {width: 50%; padding: 0 3rem;}
 .MD-section .MD-container .MD-box {width: 50%;}
+.MD-section .MD-container .MD-box p:nth-child(1) {font-size: 30px; font-weight: 700;}
+.MD-section .MD-container .MD-box p:nth-child(2) {font-size: 18px; font-weight: 400; color: red; padding: 1rem 0;}
+
+.MD-section .MD-container .MD-item {width: 100%; height: auto; display: flex;}
+.MD-section .MD-container .MD-item .item-img {width: 80px; margin-right: 1rem;}
+.MD-section .MD-container .MD-item .item-img img {width: 100%; border-radius: 1rem;}
+
+/* recomend section */
+.recomend-section {width: 100%; height: auto; max-width: 1240px;}
+
