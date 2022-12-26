@@ -21,8 +21,8 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".recomend-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
+  // pagination: {
+  //   el: ".",
+  //   clickable: true,
+  // },
 });
