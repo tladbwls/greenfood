@@ -22,7 +22,7 @@ var swiper = new Swiper(".recomend-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-scrollbar",
     clickable: true,
   },
 });
