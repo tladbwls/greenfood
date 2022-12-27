@@ -20,8 +20,8 @@ a {text-decoration: none; color: black;}
 
 .new-txts .price-box { display: flex; align-items: center; gap: .25rem;}
 .new-txts .price-box .sale {font-size: 18px; font-weight: 700; color: red; }
-.new-txts .price-box .price-1 {font-size: 18px; font-weight: 700;}
-.new-txts .price-box .price-2 {font-size: .82em; text-decoration: line-through; color: #555;} 
+.price-1 {font-size: 18px; font-weight: 700;}
+.price-2 {font-size: .82em; text-decoration: line-through; color: #555;} 
 
 /* swiper slide */
 .swiper-slide {text-align: center;font-size: 18px;background: #fff;
@@ -109,3 +109,18 @@ object-fit: cover;}
 
 .new-section .popular-img {width: 100%; background:rgb(241, 76, 57); display: flex;}
 .new-section .popular-img .popular-txt {color: #fff; font-size: 26px; margin: auto;}
+
+/* Hot section */
+.hot-section {width: 100%; height: auto; max-width: 1240px;  margin: auto; margin-bottom: 7rem;}
+.hot-section .hot-img-boxes {width: 33.33%;}
+.hot-section .hot-img-box img {width: 100%; height: 300px; object-fit: cover;}
+
+.hot-section .hot-container {display: flex; gap: 1rem;}
+
+.hot-section .hot-txt-boxes {display: flex; justify-content: space-between; padding-top: 1rem;}
+.hot-section .hot-txt-boxes .sale {color: rgb(29,210,94); font-weight: 700; font-size: 30px;}
+.hot-section .hot-txt-boxes .hot-title-box {display: flex; flex-direction: column; }
+.hot-section .hot-txt-boxes .hot-title-box .txt-bottom {display: flex; column-gap: .75rem; text-align: center; justify-content: center;}
+
+/* footer */
+.footer .footer-section {width: 100%; height: auto; margin: auto; background: ; background: rgb(248,248,248); padding: 2rem; border-top: 1px solid rgb(209, 209, 209)} 
