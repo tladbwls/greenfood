@@ -44,6 +44,8 @@ a {text-decoration: none; color: black;}
 
 .swiper-slide img {display: block;width: 100%;height: 100%;
 object-fit: cover;}
+
+
 /* style css */
 
 /* header section */
@@ -105,6 +107,8 @@ object-fit: cover;}
 
 .recomend-section .swiper-wrapper {padding-bottom: 2rem;}
 
+/* .recomend-section .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {position: absolute; background: #000; width: 80%; border-radius: 5px;} */
+
 .new-section .img-boxes2 {padding: 3.5rem 0;}
 
 .new-section .popular-img {width: 100%; background:rgb(241, 76, 57); display: flex;}
@@ -123,4 +127,8 @@ object-fit: cover;}
 .hot-section .hot-txt-boxes .hot-title-box .txt-bottom {display: flex; column-gap: .75rem; text-align: center; justify-content: center;}
 
 /* footer */
-.footer .footer-section {width: 100%; height: auto; margin: auto; background: ; background: rgb(248,248,248); padding: 2rem; border-top: 1px solid rgb(209, 209, 209)} 
+.footer {width: 100%; height: auto; margin: auto; background: rgb(248,248,248); padding: 2rem; border-top: 1px solid rgb(209, 209, 209)} 
+
+.footer .footer-section {width: 100%; height: auto; max-width: 1240px; margin: auto;} 
+.footer .footer-txt p {margin: .5rem 0;}
+.footer .footer-section .copy {font-size: 14px; color: #7a7a7a;}
