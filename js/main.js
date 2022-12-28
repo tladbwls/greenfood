@@ -22,7 +22,10 @@ var swiper = new Swiper(".recomend-swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
-    el: ".swiper-scrollbar",
+    el: ".swiper-pagination",
     clickable: true,
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
   },
 });
