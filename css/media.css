@@ -1,3 +1,6 @@
 @media screen and (max-width: 1020px) {
+    .header {position: sticky; top: 0; background: #fff; z-index: 15; border-bottom: 1px solid #ccc; }
+    .header .header-nav .nav-menu {display: none;}
+    .header .header-nav {width: 100%; height: auto; }
     
 }
