@@ -80,6 +80,13 @@ setInterval(function () {
 //   });
 // }
 
-const menu = document.querySelector("#menu");
+const menu = document.querySelector(".menu");
+const toggle = document.querySelector(".menu-toggle");
 
-menu.addEventListener("click", () )
+console.log(menu);
+
+function toggleclick() {
+  menu.classList.add("active");
+}
+
+toggle.addEventListener("click", toggleclick);
