@@ -1,4 +1,6 @@
 @media screen and (max-width: 1020px) {
+    .section {width: 100%; height: auto; max-width: 980px;}
+
     .header {position: sticky; top: 0; background: #fff; z-index: 15; border-bottom: 1px solid #ccc; padding: 1rem 0;}
     .header .header-nav .nav-menu, .header .header-container .login-header {display: none;}
     
@@ -6,7 +8,7 @@
 
     #menuToggle
 {
-  display: block;
+  display: none;
   position: relative;
   top: 50px;
   
@@ -110,7 +112,7 @@
 
 }
 
-#menu.active {}
+#menu.active {display: block;}
 
 /* #menu li
 {
@@ -123,4 +125,9 @@
 {
   transform: none;
 }  */
+
+.slider-section {width: 100%; height: 500px;}
+.slider-section .swiper-slide .black-box {width: 100%; height: 500px;}
+
+
 }

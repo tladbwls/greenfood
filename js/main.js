@@ -30,21 +30,21 @@ var swiper = new Swiper(".recomend-swiper", {
   },
 });
 
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $("header").outerHeight();
+// var didScroll;
+// var lastScrollTop = 0;
+// var delta = 5;
+// var navbarHeight = $("header").outerHeight();
 
-$(window).scroll(function (event) {
-  didScroll = true;
-});
+// $(window).scroll(function (event) {
+//   didScroll = true;
+// });
 
-setInterval(function () {
-  if (didScroll) {
-    hasScrolled();
-    didScroll = false;
-  }
-}, 250);
+// setInterval(function () {
+//   if (didScroll) {
+//     hasScrolled();
+//     didScroll = false;
+//   }
+// }, 250);
 
 // //1. 버튼 요소 선택
 // const menu = document.querySelectorAll("#menu");
@@ -81,12 +81,20 @@ setInterval(function () {
 // }
 
 const menu = document.querySelector(".menu");
+const b = document.querySelector(".menu.active");
 const toggle = document.querySelector(".menu-toggle");
 
-console.log(menu);
-
-function toggleclick() {
-  menu.classList.add("active");
+if (menu == b) {
+  function toggleclick() {
+    menu.classList.remove("active");
+  }
+} else {
+  function toggleclick() {
+    menu.classList.add("active");
+  }
 }
+// function toggleclick() {
+//   menu.classList.add("active");
+// }
 
 toggle.addEventListener("click", toggleclick);
