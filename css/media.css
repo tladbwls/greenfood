@@ -1,5 +1,5 @@
 @media screen and (max-width: 1020px) {
-    .section {width: 100%; height: auto; max-width: 980px;}
+    section {width: 100%; height: auto; max-width: 980px;}
 
     .header {position: sticky; top: 0; background: #fff; z-index: 15; border-bottom: 1px solid #ccc; padding: 1rem 0;}
     .header .header-nav .nav-menu, .header .header-container .login-header {display: none;}
@@ -129,5 +129,9 @@
 .slider-section {width: 100%; height: 500px;}
 .slider-section .swiper-slide .black-box {width: 100%; height: 500px;}
 
+/* .MD-section .MD-container .MD-item .item-img {width: 50px;} */
+/* .MD-section .MD-container .MD-box {display: flex; flex-direction: column; row-gap: .15rem;} */
 
+.footer .footer-txt p {font-size: calc( 29px - ( 1280px - 100vw ) * 0.0052999 ) !important;}
+.footer .footer-txt {display: flex; gap: .5rem;}
 }
