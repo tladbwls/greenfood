@@ -40,7 +40,7 @@
     #menuToggle input:checked ~ span{opacity: 1;transform: rotate(45deg) translate(-2px, -1px);background: #232323;}
     #menuToggle input:checked ~ span:nth-last-child(3){opacity: 0;transform: rotate(0deg) scale(0.2, 0.2);}
     #menuToggle input:checked ~ span:nth-last-child(2){transform: rotate(-45deg) translate(0, -1px);}
-    #menu{ display: none; position: absolute;width: 300px; _margin: -100px 0 0 -50px; _padding: 50px; _padding-top: 125px; right: -600px;  background: #fff;list-style-type: none;-webkit-font-smoothing: antialiased; }
+    #menu{ display: block; right: -100%; position: absolute;width: 300px; _margin: -100px 0 0 -50px; _padding: 50px; _padding-top: 125px; right: -600px;  background: #fff;list-style-type: none;-webkit-font-smoothing: antialiased; transition: all .5s; }
     #menu li{padding: 10px 0;font-size: 17px; font-weight: bold;}
     /* #menuToggle input:checked ~ ul{transform: none;}  */
 

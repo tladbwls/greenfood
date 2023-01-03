@@ -47,12 +47,12 @@ var swiper = new Swiper(".recomend-swiper", {
 // }, 250);
 
 const menu = document.querySelector(".menu");
-const toggle = document.querySelector(".menu-toggle");
+const toggle_menu = document.querySelector(".menu-toggle");
 
-toggle.addEventListener("click", function () {
+toggle_menu.addEventListener("click", function () {
   this.classList.toggle("active");
   console.log(this);
-  if (toggle.classList.contains("active")) {
+  if (toggle_menu.classList.contains("active")) {
     menu.classList.add("active");
   } else {
     menu.classList.remove("active");
