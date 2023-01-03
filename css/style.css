@@ -50,10 +50,14 @@ a {text-decoration: none; color: black;}
 
  #menuToggle
 {display: none; position: relative;top: 100%; right: 0px; z-index: 1;-webkit-user-select: none;user-select: none;}
-.menu-toggle .menu .icon {display: flex; justify-content: space-between; font-size: 25px;}
+.menu-toggle .menu .icon {display: flex; justify-content: space-around; font-size: 25px;}
 .menu-toggle .menu .icon .search-box {position: relative; width: 200px; height: 30px; border: 1px solid #ddd;}
 .menu-toggle .menu .icon .search-box input {width: 100%; font-size: 14px;}
 .menu-toggle .menu .icon .search-box i {position: absolute; right: 0;}
+
+.menu-toggle .menu .menu-login {width: 100%; height: auto;display: flex; justify-content: space-evenly; margin: 40px 0 10px 0;}
+.menu-toggle .menu .menu-login button {background: #000;  width: 45%; height: auto;  padding: .5rem 3rem; }
+.menu-toggle .menu .menu-login button a {color: #fff;}
 /*
 #menuToggle a{text-decoration: none;color: #232323;transition: color 0.3s ease;}
 #menuToggle input{display: block;width: 40px;height: 32px;position: absolute;top: -7px;left: -5px;
