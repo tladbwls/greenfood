@@ -48,14 +48,17 @@ var swiper = new Swiper(".recomend-swiper", {
 
 const menu = document.querySelector(".menu");
 const toggle_menu = document.querySelector(".menu-toggle");
+const all = document.querySelector(".all");
 
 toggle_menu.addEventListener("click", function () {
   this.classList.toggle("active");
   console.log(this);
   if (toggle_menu.classList.contains("active")) {
     menu.classList.add("active");
+    all.classList.add("active");
   } else {
     menu.classList.remove("active");
+    all.classList.remove("active");
   }
 });
 
