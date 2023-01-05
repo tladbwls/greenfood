@@ -55,12 +55,12 @@
             <li><a href="#">공지사항</a></li>
             <li><a href="#">위치</a></li>
           </ul>
-          <div id="menuToggle" class="menu-toggle">
+          <div id="menuToggle" class="menu-toggle" onclick="openNav()">
             <input type="checkbox" class="checkbox" />
             <span></span>
             <span></span>
             <span></span>
-            <ul id="menu" class="menu">
+            <ul id="menu" class="menu" onclick="closeNav()">
               <div class="menu-login">
                 <button><a href="#">LOGIN</a></button>
                 <button><a href="#">JOIN</a></button>
@@ -222,8 +222,8 @@
             </p>
             <p>오늘만 할인되는 세일상품을 만나보세요!</p>
           </div>
-          
-          <div class="MD-item">
+          <div class="MD-item-box">
+            <div class="MD-item">
             <div class="item-img">
               <img src="/img/kiwi.jpeg" alt="">
             </div>
@@ -264,6 +264,8 @@
               </div>
             </div>
           </div>
+          </div>
+          
           
         </div>
       </div>

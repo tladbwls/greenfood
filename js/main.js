@@ -94,3 +94,11 @@ toggle_menu.addEventListener("click", function () {
 // }
 
 // toggle.addEventListener("click", toggleclick);
+
+function openNav() {
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.body.style.backgroundColor = "#fff";
+}
