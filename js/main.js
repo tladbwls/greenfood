@@ -6,12 +6,12 @@ var swiper = new Swiper(".mySwiper", {
   },
   speed: 1000,
 
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
-  // loop: false,
-  // loopAdditionalSlides: 1,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  loop: false,
+  loopAdditionalSlides: 1,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -100,5 +100,18 @@ function openNav() {
 }
 
 function closeNav() {
-  document.body.style.backgroundColor = "#fff";
+  document.body.style.backgroundColor = "white";
 }
+
+const btn = document.querySelector(".grm");
+const panel = document.querySelector(".nav-menu-bar");
+
+btn.addEventListener("click", function () {
+  this.classList.toggle("active");
+  console.log(this);
+  if (panel.classList.contains("active")) {
+    btn.classList.add("active");
+  } else {
+    btn.classList.remove("active");
+  }
+});

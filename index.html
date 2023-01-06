@@ -48,8 +48,26 @@
             <img src="/img/Logo.png" alt="">
           </div>
           <ul class="nav-menu">
-            <li><a href="#">Greenmart</a></li>
-            <li><a href="#">제철농산물</a></li>
+            <li>
+              <a href="#" class="grm">
+                Greenmart
+                <ul class="nav-menu-bar">
+                  <li><a href="#">브랜드 소개</a></li>
+                  <li><a href="#">브랜드 스토리</a> </li>
+                  <li><a href="#">소개 영상</a> </li>
+                  <li><a href="#">상품 갤러리</a> </li>
+                </ul>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="grm active"> 
+                제철농산물
+                <ul class="nav-menu-bar active">
+                  <li><a href="#">베스트</a></li>
+                  <li><a href="#">유기농</a> </li>
+                </ul>
+              </a>
+            </li>
             <li><a href="#">알뜰쇼핑</a></li>
             <li><a href="#">오늘배송</a></li>
             <li><a href="#">공지사항</a></li>
@@ -60,11 +78,14 @@
             <span></span>
             <span></span>
             <span></span>
-            <ul id="menu" class="menu" onclick="closeNav()">
+            <div id="menu" class="menu" onclick="closeNav()">
               <div class="menu-login">
                 <button><a href="#">LOGIN</a></button>
                 <button><a href="#">JOIN</a></button>
               </div>
+
+
+              
               <div class="menu-box">
               <div class="icon">
                 <div class="icon-box">
