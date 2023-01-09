@@ -116,21 +116,35 @@ const panel = document.querySelectorAll(".nav-menu-bar");
 //   }
 
 // });
-for (let i = 0; i < btns.length; i++) {
-  const btn = btns[i];
-  console.log(btn);
+// for (let i = 0; i < btns.length; i++) {
+//   const btn = btns[i];
+//   console.log(btn);
 
-  btn.addEventListener("click", function () {
+//   btn.addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     // console.log(this);
+//   });
+// }
+
+// for (let i = 0; i < panel.length; i++) {
+//   const panels = panel[i];
+//   console.log(panels);
+// }
+btns.forEach(function (a) {
+  a.addEventListener("click", function () {
     this.classList.toggle("active");
-    // console.log(this);
   });
-}
+  if (btns.classList.contains("active")) {
+    panel.classList.add("active");
+  } else {
+    panel.classList.remove("active");
+  }
+});
 
-for (let i = 0; i < panel.length; i++) {
-  const panels = panel[i];
-  console.log(panels);
-}
-array.forEach((element) => {});
+// panel.forEach(function (b) {
+//   this.classList.toggle("active");
+//   console.log(this);
+// });
 // //1. 버튼 요소 선택
 // const btns = document.querySelectorAll(".btns .btn");
 // const panels = document.querySelectorAll(".panels .panel");
