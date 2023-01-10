@@ -97,12 +97,12 @@ cursor: pointer;opacity: 0; z-index: 2;-webkit-touch-callout: none;}
 
 .header .header-nav {display: flex; justify-content: space-between; _padding: 2rem ;}
 .header .nav-menu {display: flex; column-gap: 3rem;  font-weight: 700; font-size: 17px;} 
-.header .nav-menu .nav-menu-bar {width: 100%; height: auto; background: #555; border: 1px solid #555; min-width: 160px; _padding: 1rem; display: flex; flex-direction: column; display: none;}
-.header .nav-menu .nav-menu-bar.active {display: block;}
+.header .nav-menu .nav-menu-bar { height: auto; background: #555; border: 1px solid #555; min-width: 160px; _padding: 1rem;   display: none; flex-direction: column; position: absolute; z-index: 10;}
+.header .nav-menu .nav-menu-bar.active {display: block; }
 
 .header .nav-menu .nav-menu-bar li {padding: .5rem; border-bottom: .25px solid #efefef; display: flex; justify-content: flex-end;}
 .header .nav-menu .nav-menu-bar a {color: #fff; font-weight: 100; font-size: 14px; }
-.header-nav .grm {position: relative; padding-left: 75px;}
+.header-nav .grm {position: relative; _padding-left: 75px;}
 
 
 
