@@ -48,17 +48,14 @@ var swiper = new Swiper(".recomend-swiper", {
 
 const menu = document.querySelector(".menu");
 const toggle_menu = document.querySelector(".menu-toggle");
-const all = document.querySelector(".all");
 
 toggle_menu.addEventListener("click", function () {
   this.classList.toggle("active");
   console.log(this);
   if (toggle_menu.classList.contains("active")) {
     menu.classList.add("active");
-    all.classList.add("active");
   } else {
     menu.classList.remove("active");
-    all.classList.remove("active");
   }
 });
 
@@ -94,13 +91,16 @@ toggle_menu.addEventListener("click", function () {
 // }
 
 // toggle.addEventListener("click", toggleclick);
-
+const overlay = document.querySelector(".overlay");
 function openNav() {
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  overlay.style.backgroundColor = "rgba(0,0,0,0.4)";
+  overlay.style.visibility = "visible";
+  overlay.style.opacity = 1;
 }
 
 function closeNav() {
-  document.body.style.backgroundColor = "white";
+  overlay.style.backgroundColor = "white";
+  overlay.visibility = "hidden";
 }
 
 const btns = document.querySelectorAll(".grm");

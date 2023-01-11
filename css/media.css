@@ -12,7 +12,7 @@
     
 
     #menuToggle
-    {display: block; position: relative;top: 100%; right: 0px; z-index: 1;-webkit-user-select: none;user-select: none; display: flex; flex-direction: column; align-items: center; justify-content:center;}
+    {display: block; position: relative;top: 100%; right: 0px; z-index: 1; -webkit-user-select: none;user-select: none; display: flex; flex-direction: column; align-items: center; justify-content:center;}
     #menuToggle .nav-txt {text-decoration: none;color: #232323;transition: color 0.3s ease; font-weight: bold; font-size: 17px; padding: 1rem 0 0 1rem; }
     #menuToggle input{display: block;width: 40px;height: 32px;position: absolute;top: -7px;left: -5px;
     cursor: pointer;opacity: 0; z-index: 2;-webkit-touch-callout: none;}
@@ -103,4 +103,26 @@
 
   .hot-section .hot-txt-boxes {align-items: center; flex-direction: column;}
   .hot-section .hot-txt-boxes .hot-title-box {align-items: center;}
+}
+
+@media screen and (max-width: 390px) {
+
+  .slider-section .slider-txts .text-1 {font-size: 30px;}
+
+  .title-box {text-align: center;}
+
+  .img-boxes {flex-direction: column; align-items: center; text-align: center;}
+  .img-boxes .img-box {width: 50%;}
+
+  .recomend-section .recomend-swiper {width: 100%;}
+
+  
+  .MD-section .MD-container .MD-item .item-img {width: 100%; }
+  .new-txts {text-align: center;}
+  .MD-section .MD-container .MD-box p:nth-child(1) {font-size: 25px;}
+
+  .new-section .popular-img .popular-txt {font-size: 20px;}
+
+  .hot-section .hot-txt-boxes .hot-title-box .txt-bottom {flex-direction: column;}
+  .hot-section .hot-txt-boxes .sale {font-size: 20px;}
 }
