@@ -93,14 +93,16 @@ toggle_menu.addEventListener("click", function () {
 // toggle.addEventListener("click", toggleclick);
 const overlay = document.querySelector(".overlay");
 function openNav() {
+  document.getElementById("menuToggle").style.width = "250px";
   overlay.style.backgroundColor = "rgba(0,0,0,0.4)";
-  overlay.style.visibility = "visible";
-  overlay.style.opacity = 1;
+  // overlay.style.visibility = "visible";
+  // overlay.style.opacity = 1;
 }
 
 function closeNav() {
+  document.getElementById("menu").style.width = "0";
   overlay.style.backgroundColor = "white";
-  overlay.visibility = "hidden";
+  // overlay.visibility = "hidden";
 }
 
 const btns = document.querySelectorAll(".grm");
