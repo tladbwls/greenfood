@@ -6,13 +6,14 @@
   .new-section .popular-img  {width: 100%;}
   #main {display: block;}
 
-  .header {position: sticky; top: 0; background: #fff; z-index: 15; border-bottom: 1px solid #ccc; }
+  .header {width: 100%; height: 40px; border-bottom: 1px solid #ccc; z-index: 10; background: #fff;}
+  header.sticky {position: fixed; top: 0; width: 100%;}
   .header .header-nav {align-items: center;}
   .header .header-nav .nav-menu, .header .header-container .login-header {display: none;}
   
   .header .header-container .a {display: none;}
   
- .sidenav.active {display: block; z-index: 1000;}
+ .sidenav.active {display: block; z-index: 100;}
 
   
       

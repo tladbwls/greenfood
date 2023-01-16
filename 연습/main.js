@@ -1,15 +1,4 @@
-// function openNav() {
-//   document.getElementById("mySidenav").style.width = "250px";
-//   // document.getElementById("main").style.marginLeft = "250px";
-//   document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-// }
-
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-//   // document.getElementById("main").style.marginLeft = "0";
-//   document.body.style.backgroundColor = "white";
-// }
-
+// slider section
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   navigation: {
@@ -41,6 +30,22 @@ var swiper = new Swiper(".recomend-swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+// sticky header
+window.onscroll = function () {
+  myFunction();
+};
+
+const header = document.querySelector(".header");
+const sticky = header.offsetTop;
+function myFunction() {
+  console.log(scrollX);
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 
 // var didScroll;
 // var lastScrollTop = 0;
@@ -86,6 +91,7 @@ var swiper = new Swiper(".recomend-swiper", {
 //   // overlay.visibility = "hidden";
 // }
 
+//sidemenu
 const btns = document.querySelector(".main-toggle");
 const panel = document.querySelectorAll(".sidenav");
 const close = document.querySelectorAll(".closebtn");
@@ -118,6 +124,12 @@ close.forEach(function (b) {
       b.classList.remove("active");
       overlay.classList.remove("active");
     }
+
+    // overlay.addEventListener("click", function () {
+    //   this.nextSibling.nextSibling.classList.remove("active");
+    //   b.classList.remove("active");
+    //   overlay.classList.remove("active");
+    // });
   });
   b.addEventListener("click", function () {
     b.classList.remove("active");
