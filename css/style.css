@@ -4,7 +4,7 @@ ol, ul {list-style: none;}
 a {text-decoration: none; color: black;}
 
 /* common style */
-.overlay{position:fixed; width:100%; height:100%; top:0; left:0; opacity:0; background:#bbb; visibility: hidden; z-index:100;}
+
 
 .wrapper {width: 100%; height: auto; overflow: hidden;}
 
@@ -50,35 +50,80 @@ a {text-decoration: none; color: black;}
 
 /* hamburger menu */
 
- #menuToggle
-{display: none; position: relative;top: 100%; right: 0px; z-index: 1;-webkit-user-select: none;user-select: none;}
-
-
-
-
-
-.menu-toggle .menu .menu-login {width: 100%; height: auto;display: flex; justify-content: space-evenly; margin: 40px 0 30px 0;}
-.menu-toggle .menu .menu-login button {background: #000;  width: 45%; height: auto;  padding: .5rem 3rem; }
-
-/*
-#menuToggle a{text-decoration: none;color: #232323;transition: color 0.3s ease;}
-#menuToggle input{display: block;width: 40px;height: 32px;position: absolute;top: -7px;left: -5px;
-cursor: pointer;opacity: 0; z-index: 2;-webkit-touch-callout: none;}
-#menuToggle span{display: block;width: 33px;height: 4px;margin-bottom: 5px;position: relative;background: black;border-radius: 3px;z-index: 1;transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+.row .three{
+  padding: 80px 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
 }
-#menuToggle span:first-child{transform-origin: 0% 0%;}
-#menuToggle span:nth-last-child(2){transform-origin: 0% 100%;}
-#menuToggle input:checked ~ span{opacity: 1;transform: rotate(45deg) translate(-2px, -1px);background: #232323;}
-#menuToggle input:checked ~ span:nth-last-child(3){opacity: 0;transform: rotate(0deg) scale(0.2, 0.2);}
-#menuToggle input:checked ~ span:nth-last-child(2){transform: rotate(-45deg) translate(0, -1px);}
-#menu{ display: none; position: absolute;width: 300px; _margin: -100px 0 0 -50px; _padding: 50px; _padding-top: 125px; right: -600px;  background: #ededed;list-style-type: none;-webkit-font-smoothing: antialiased; _transform-origin: 0% 0%;transform: translate(-100%, 0);transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);}
-#menu li{padding: 10px 0;font-size: 22px;}
-#menuToggle input:checked ~ ul{transform: none;} 
 
-#menu.active {display: block; top:0; right: -300px;}  */
+.hamburger .line{
+  width: 30px;
+  height: 2px;
+  background-color: #666;
+  display: block;
+  margin: 6px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#hamburger-4.active {width: 30px;}
+
+#hamburger-4.active .line:nth-child(1),
+#hamburger-4.active .line:nth-child(3){
+  width: 15px;
+}
+
+#hamburger-4.active .line:nth-child(1){
+  -webkit-transform: translateX(10px) rotate(45deg);
+  -ms-transform: translateX(10px) rotate(45deg);
+  -o-transform: translateX(10px) rotate(45deg);
+  transform: translateX(10px) translateY(2px) rotate(45deg);
+}
+
+#hamburger-4.active .line:nth-child(3){
+  -webkit-transform: translateX(10px) rotate(-45deg);
+  -ms-transform: translateX(10px) rotate(-45deg);
+  -o-transform: translateX(10px) rotate(-45deg);
+  transform: translateX(10px) translateY(-3px) rotate(-45deg);
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+ .sidenav {width: 0; height: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: #fff; padding-top: 35px; visibility: hidden; transition: all .5s;}
+ .sidenav.active {visibility: hidden; }
+
+ .sidenav .side-txt a {padding: 8px 8px 8px 32px; text-decoration: none; font-size: 17px; color: #000; display: block; font-weight: bold;}
+
+ .sidenav .side-login {display: flex; justify-content: center;  gap: .25rem; }
+ .sidenav .side-login button {width: 148px; height: 40px; border-radius: 0; border: 1px solid #777; font-weight: bold; background: #fff; }
+ .sidenav .side-login .b-login {background: #000;  color: #fff;}
+
+ .sidenav .side-icon {width: 100%; height: auto; display: flex; align-items: center; padding: 1rem 0; justify-content: space-evenly;}
+ .sidenav .side-icon .icon-box {display: flex; gap: 1rem;}
+ .sidenav .side-icon .icon-box i {font-size: 25px;}
+ .sidenav .side-icon .side-search {border: .5px solid #000; border-radius: .20rem;  display: flex; align-items: center; padding: 0 .25rem;}
+ .sidenav .side-icon .side-search input {border: none; margin: auto; width: 180px; height: 30px;}
+ .sidenav .side-icon .side-search i {font-size: 20px;}
+
+ .sidenav .side-icon .icon-box .cart {position: relative;}
+ .sidenav .side-icon .icon-box .cart .cart-circle {position: absolute; color: #fff; background: #000; border-radius: 50%; font-size: 3px; width: 15px; height: 15px; text-align: center; top: -4px; right: -4px;} 
+ 
+  .sidenav .line {width: 90%; border: .5px solid rgb(200, 200, 200); margin: .5rem auto 1.5rem;}
+
+ .sidenav .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px; }
+ 
+
+ #main {_transition: margin-left .5s; _padding: 16px; display: none; position: fixed; right: 10px; top: 0px; z-index: 20;}
+
+.overlay{position:fixed; width:100%; height:100%; top:0; left:0; opacity:1; background:#ddd; visibility: hidden; z-index:100;}
+.overlay.active{z-index: 30;}
 
 
 /* style css */
@@ -88,12 +133,14 @@ cursor: pointer;opacity: 0; z-index: 2;-webkit-touch-callout: none;}
 .header .header-container {width: 100%; height: auto; max-width: 1280px; margin: 0 auto;}
 .header .login-header {display: flex; justify-content: flex-end; column-gap: 2rem; margin: 1rem;} 
 .header .login-header .login {display: flex; align-items: center; column-gap: 2rem; font-size: 12px; color: #7a7a7a;}
-
+header.sticky {display: none;}
 
 
 .header .header-container .a {margin-bottom: 2rem;}
 
 .header .login-header .icon i {font-size: 23px; margin: 0 .25rem;}
+.header .login-header .icon .cart {position: relative;}
+.header .login-header .icon .cart .cart-circle {position: absolute; color: #fff; background: #000; border-radius: 50%; font-size: 3px; width: 15px; height: 15px; text-align: center; top: -4px; right: 0;} 
 
 
 .header .header-nav {display: flex; justify-content: space-between; _padding: 2rem ;}

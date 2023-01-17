@@ -1,3 +1,4 @@
+// slider section
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   navigation: {
@@ -30,6 +31,22 @@ var swiper = new Swiper(".recomend-swiper", {
   },
 });
 
+// sticky header
+window.onscroll = function () {
+  myFunction();
+};
+
+const header = document.querySelector(".header");
+const sticky = header.offsetTop;
+function myFunction() {
+  console.log(scrollX);
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+
 // var didScroll;
 // var lastScrollTop = 0;
 // var delta = 5;
@@ -46,109 +63,102 @@ var swiper = new Swiper(".recomend-swiper", {
 //   }
 // }, 250);
 
-const menu = document.querySelector(".menu");
-const toggle_menu = document.querySelector(".menu-toggle");
+// const menu = document.querySelector(".menu");
+// const toggle_menu = document.querySelector(".menu-toggle");
 
-toggle_menu.addEventListener("click", function () {
-  this.classList.toggle("active");
-  console.log(this);
-  if (toggle_menu.classList.contains("active")) {
-    menu.classList.add("active");
-  } else {
-    menu.classList.remove("active");
-  }
-});
-
-// if (menu == b) {
-//   function toggleclick() {
+// toggle_menu.addEventListener("click", function () {
+//   this.classList.toggle("active");
+//   console.log(this);
+//   if (toggle_menu.classList.contains("active")) {
+//     menu.classList.add("active");
+//   } else {
 //     menu.classList.remove("active");
 //   }
-// } else {
-//   function toggleclick() {
-//     menu.classList.add("active");
-//   }
-// }
-// function toggleclick() {
-//   menu.classList.add("active");
+// });
+
+// // toggle.addEventListener("click", toggleclick);
+// const overlay = document.querySelector(".overlay");
+// function openNav() {
+//   document.getElementById("menuToggle").style.width = "250px";
+//   overlay.style.backgroundColor = "rgba(0,0,0,0.4)";
+//   // overlay.style.visibility = "visible";
+//   // overlay.style.opacity = 1;
 // }
 
-// function  (toggleclick) {
-//   if (menu.classList.contains("active")) {
-//   menu.classList.add("active");
-// } else {
-//   menu.classList.remove("active");
-// };
+// function closeNav() {
+//   document.getElementById("menu").style.width = "0";
+//   overlay.style.backgroundColor = "white";
+//   // overlay.visibility = "hidden";
 // }
 
-// if (menu.classList.contains("active")) {
-//   function toggleclick() {
-//     menu.classList.toggle("active");
-//   }
-// } else {
-//   function toggleclick() {
-//     menu.classList.add("active");
-//   }
-// }
-
-// toggle.addEventListener("click", toggleclick);
+//sidemenu
+const btns = document.querySelector(".main-toggle");
+const panel = document.querySelectorAll(".sidenav");
+const close = document.querySelectorAll(".closebtn");
 const overlay = document.querySelector(".overlay");
+const hamburger = document.querySelector(".hamburger");
+
+// btns.forEach(function (a) {
+//   // console.log(a);
+//   a.addEventListener("click", function () {
+//     this.classList.toggle("active");
+//     // this.sibling.classList.add("active");
+//     if (this.classList.contains("active")) {
+//       // console.log(this.nextSibling.nextSibling.childNodes);
+//       this.nextSibling.nextSibling.classList.add("active");
+//     } else {
+//       this.nextSibling.nextSibling.classList.remove("active");
+//     }
+//   });
+// });
+
+close.forEach(function (b) {
+  btns.addEventListener("click", function () {
+    btns.classList.toggle("active");
+
+    if (btns.classList.contains("active")) {
+      this.nextSibling.nextSibling.classList.add("active");
+      b.classList.add("active");
+      overlay.classList.add("active");
+      hamburger.classList.add("active");
+    } else {
+      this.nextSibling.nextSibling.classList.remove("active");
+      b.classList.remove("active");
+      overlay.classList.remove("active");
+      hamburger.classList.remove("active");
+    }
+
+    // overlay.addEventListener("click", function () {
+    //   this.nextSibling.nextSibling.classList.remove("active");
+    //   b.classList.remove("active");
+    //   overlay.classList.remove("active");
+    // });
+  });
+  b.addEventListener("click", function () {
+    b.classList.remove("active");
+    if (!b.classList.contains("active")) {
+      btns.classList.remove("active");
+      btns.nextSibling.nextSibling.classList.remove("active");
+      overlay.classList.remove("active");
+      hamburger.classList.remove("active");
+    }
+  });
+});
+
 function openNav() {
-  document.getElementById("menuToggle").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "340px";
+  document.getElementById("main").style.marginLeft = "250px";
+  // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  // panel.style.zlndex = 1000;
   overlay.style.backgroundColor = "rgba(0,0,0,0.4)";
-  // overlay.style.visibility = "visible";
-  // overlay.style.opacity = 1;
+  overlay.style.visibility = "visible";
+  overlay.style.opacity = 1;
 }
 
 function closeNav() {
-  document.getElementById("menu").style.width = "0";
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  // document.body.style.backgroundColor = "white";
   overlay.style.backgroundColor = "white";
-  // overlay.visibility = "hidden";
+  overlay.style.visibility = "hidden";
 }
-
-const btns = document.querySelectorAll(".grm");
-const panel = document.querySelectorAll(".nav-menu-bar");
-
-// btns.addEventListener("click", function () {
-//   this.classList.toggle("active");
-//   console.log(this);
-//   if (btns.classList.contains("active")) {
-//     panel.classList.add("active");
-//   } else {
-//     panel.classList.remove("active");
-//   }
-
-// });
-// for (let i = 0; i < btns.length; i++) {
-//   const btn = btns[i];
-//   console.log(btn);
-
-//   btn.addEventListener("click", function () {
-//     this.classList.toggle("active");
-//     // console.log(this);
-//   });
-// }
-
-btns.forEach(function (a) {
-  console.log(a);
-  a.addEventListener("click", function () {
-    this.classList.toggle("active");
-    // this.sibling.classList.add("active");
-    if (this.classList.contains("active")) {
-      console.log(this.nextSibling.nextSibling);
-      this.nextSibling.nextSibling.classList.add("active");
-    } else {
-      this.nextSibling.nextSibling.classList.remove("active");
-    }
-  });
-  // panel.forEach(function (b) {
-  //   console.log(b);
-  //   a.addEventListener("click", function () {
-  //     // b.classList.add("active");
-  //     if (a.classList.contains("active")) {
-  //       b.classList.add("active");
-  //     } else {
-  //       b.classList.remove("active");
-  //     }
-  //   });
-  // });
-});
