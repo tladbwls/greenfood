@@ -146,7 +146,7 @@ close.forEach(function (b) {
 });
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "300px";
+  document.getElementById("mySidenav").style.left = "0";
   document.getElementById("main").style.marginLeft = "250px";
   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   // panel.style.zlndex = 1000;
@@ -156,7 +156,7 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.left = "-300px";
   document.getElementById("main").style.marginLeft = "0";
   // document.body.style.backgroundColor = "white";
   overlay.style.backgroundColor = "white";
@@ -167,13 +167,18 @@ function closeNav() {
 const dropdownBtn = document.querySelectorAll(".dropdown-btn");
 const dropdownCtn = document.querySelectorAll(".dropdown-container");
 
-dropdownCtn.forEach(function (dCtn) {
-  console.log(dCtn);
-});
-
-dropdownBtn.forEach(function (dBtn) {
-  console.log(dBtn);
+dropdownBtn.forEach((dBtn, idx) => {
   dBtn.addEventListener("click", function () {
-    dBtn.classList.toggle("active");
+    dropdownCtn.forEach((cBtn) => {
+      // console.log(cBtn);
+      cBtn.classList.remove("active");
+    });
+    dropdownBtn.forEach((item) => {
+      // console.log(item);
+      item.classList.remove("active");
+    });
+
+    dropdownBtn[idx].classList.add("active");
+    dropdownCtn[idx].classList.add("active");
   });
 });
