@@ -105,7 +105,7 @@ a {text-decoration: none; color: black;}
  .sidenav .side-txt button i {font-size: 2rem; color: rgb(69, 69, 69);}
  /* .sidenav .side-txt .dropdown:hover + .dropdown-container {display: block;} */
 
- .sidenav .side-txt .dropdown-container {width: 90%; background: #f3f3f3; margin: auto; display: none; top: 0;}
+ .sidenav .side-txt .dropdown-container {width: 90%; background: #f3f3f3; margin: auto; display: none; top: 0; }
  .sidenav .side-txt .dropdown-container.active {display: block;}
  .sidenav .side-txt .dropdown-container a {font-size: 15px; color: #2e2e2e; font-weight: 100;}
 
@@ -114,7 +114,7 @@ a {text-decoration: none; color: black;}
  .sidenav .side-login .b-login {background: #000;  color: #fff;}
 
  .sidenav .side-icon {width: 100%; height: auto; display: flex; align-items: center; padding: 1rem 0; justify-content: space-evenly;}
- .sidenav .side-icon .icon-box {display: flex; gap: 1rem;}
+ .sidenav .side-icon .icon-box {display: flex;}
  .sidenav .side-icon .icon-box i {font-size: 25px;}
  .sidenav .side-icon .side-search {border: .5px solid #000; border-radius: .20rem;  display: flex; align-items: center; padding: 0 .25rem;}
  .sidenav .side-icon .side-search input {border: none; margin: auto; width: 180px; height: 30px;}

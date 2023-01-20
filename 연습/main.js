@@ -96,6 +96,7 @@ const btns = document.querySelector(".main-toggle");
 const panel = document.querySelectorAll(".sidenav");
 const close = document.querySelectorAll(".closebtn");
 const overlay = document.querySelector(".overlay");
+const hamburger = document.querySelector(".hamburger");
 
 // btns.forEach(function (a) {
 //   // console.log(a);
@@ -119,10 +120,12 @@ close.forEach(function (b) {
       this.nextSibling.nextSibling.classList.add("active");
       b.classList.add("active");
       overlay.classList.add("active");
+      hamburger.classList.add("active");
     } else {
       this.nextSibling.nextSibling.classList.remove("active");
       b.classList.remove("active");
       overlay.classList.remove("active");
+      hamburger.classList.remove("active");
     }
 
     // overlay.addEventListener("click", function () {
@@ -137,12 +140,13 @@ close.forEach(function (b) {
       btns.classList.remove("active");
       btns.nextSibling.nextSibling.classList.remove("active");
       overlay.classList.remove("active");
+      hamburger.classList.remove("active");
     }
   });
 });
 
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.left = "0";
   document.getElementById("main").style.marginLeft = "250px";
   // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   // panel.style.zlndex = 1000;
@@ -152,9 +156,37 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.left = "-300px";
   document.getElementById("main").style.marginLeft = "0";
   // document.body.style.backgroundColor = "white";
   overlay.style.backgroundColor = "white";
   overlay.style.visibility = "hidden";
 }
+
+// sidenav
+// const dropdownBtn = document.querySelectorAll(".dropdown-btn");
+// const dropdownCtn = document.querySelectorAll(".dropdown-container");
+
+// dropdownBtn.forEach((dBtn, idx) => {
+//   dBtn.addEventListener("click", function () {
+//     dropdownCtn.forEach((cBtn) => {
+//       // console.log(cBtn);
+//       cBtn.classList.remove("active");
+//     });
+//     dropdownBtn.forEach((item) => {
+//       // console.log(item);
+//       item.classList.remove("active");
+//     });
+
+//     dropdownBtn[idx].classList.add("active");
+//     dropdownCtn[idx].classList.add("active");
+
+//     if (dropdownBtn[idx].classList.contains("active")) {
+//       dropdownBtn[idx].classList.remove("active");
+//       // dropdownBtn[idx].addEventListener("click", function () {
+
+//       //   dropdownCtn[idx].classList.remove("active");
+//       // });
+//     }
+//   });
+// });

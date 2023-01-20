@@ -69,6 +69,8 @@ transform: none;
 .recomend-section {_max-width: 600px;}
 .hot-section {_max-width: 600px;}
 
+.price-1 {font-size: .8rem;}
+
 .slider-section .slider-txts {align-items: center;}
 .slider-section .slider-txts .text-1 {font-size: 2rem;}
 
@@ -82,6 +84,9 @@ transform: none;
 
 .hot-section .hot-txt-boxes {align-items: center; flex-direction: column;}
 .hot-section .hot-txt-boxes .hot-title-box {align-items: center;}
+.hot-section .hot-txt-boxes .sale {font-size: 1rem;}
+
+.hot-section .hot-txt-boxes .hot-title-box .txt-bottom {flex-direction: column;}
 }
 
 @media screen and (max-width: 390px) {

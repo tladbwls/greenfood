@@ -30,16 +30,68 @@
     
     <!-- hamburger menu -->
     <div id="main" class="main-toggle">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div class="hamburger" id="hamburger-4">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </span>
     </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">Greenmart</a>
-      <a href="#">제철농산물</a>
-      <a href="#">알뜰쇼핑</a>
-      <a href="#">오늘배송</a>
-      <a href="#">공지사항</a>
-      <a href="#">위치</a>
+      <div class="side-login">
+        <a href="#"></a><button class="b-login">LOGIN</button></a>
+        <a href="#"></a><button>JOIN</button></a>
+      </div>
+      <div class="side-icon">
+        <div class="icon-box">
+          <i class="ri-user-3-line"></i>
+          <i class="ri-shopping-cart-2-line cart">
+            <div class="cart-circle">0</div>
+          </i>
+        </div>
+        <div class="side-search">
+          <input type="search" placeholder="상품 검색">
+          <i class="ri-search-line"></i>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="side-txt">
+        <div class="dropdown">
+          <a href="#">Grenmart</a>
+          <button class="dropdown-btn">
+            <i class="ri-arrow-down-s-line"></i>
+          </button>
+          <!-- <button class="dropdown-btn active">
+            <i class="ri-arrow-up-s-line"></i>
+          </button> -->
+        </div> 
+
+       <div class="dropdown-container">
+          <a href="#">브랜드 소개</a>
+          <a href="#">브랜드 스토리</a>
+          <a href="#">소개 영상</a>
+          <a href="#">상품 갤러리</a>
+        </div>
+        
+        <div class="dropdown">
+          <a href="#">제철농산물</a>
+          <button class="dropdown-btn"><i class="ri-arrow-down-s-line"></i></button>
+        </div> 
+
+        <div class="dropdown-container">
+          <a href="#">베스트</a>
+          <a href="#">유기농</a>
+        </div>
+       
+        
+        <a href="#">알뜰쇼핑</a>
+        <a href="#">오늘배송</a>
+        <a href="#">공지사항</a>
+        <a href="#">위치</a>
+      </div>
+      
     </div>
           
     <!-- header -->
@@ -52,7 +104,9 @@
           </div>
           <div class="icon">
             <i class="ri-user-3-line"></i>
-            <i class="ri-shopping-cart-2-line"></i>
+            <i class="ri-shopping-cart-2-line cart">
+              <div class="cart-circle">0</div>
+            </i>
             <i class="ri-search-line"></i>
           </div>
         </div>
@@ -63,20 +117,23 @@
           </div>
           <ul class="nav-menu">
             <li>
-              <a href="#" class="grm">Greenmart</a>
-              <ul class="nav-menu-bar">
-                <li><a href="#">브랜드 소개</a></li>
-                <li><a href="#">브랜드 스토리</a> </li>
-                <li><a href="#">소개 영상</a> </li>
-                <li><a href="#">상품 갤러리</a> </li>
-              </ul>
+              <div class="grm"><a href="#">Greenmart</a> 
+                <ul class="nav-menu-bar">
+                  <li><a href="#">브랜드 소개</a></li>
+                  <li><a href="#">브랜드 스토리</a> </li>
+                  <li><a href="#">소개 영상</a> </li>
+                  <li><a href="#">상품 갤러리</a> </li>
+                </ul>
+              </div>
+              
             </li>
             <li>
-              <a href="#" class="grm">제철농산물</a>
+              <div class="grm"><a href="">제철농산물</a> 
               <ul class="nav-menu-bar">
                 <li><a href="#">베스트</a></li>
                 <li><a href="#">유기농</a> </li>
               </ul>
+            </div>
             </li>
             <li><a href="#">알뜰쇼핑</a></li>
             <li><a href="#">오늘배송</a></li>
@@ -536,9 +593,12 @@
     <!-- swider script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
     <!-- main script -->
-    <script src="/연습/main.js"></script>
+    <script src="/js/main.js"></script>
     
   </body>
 </html>

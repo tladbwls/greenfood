@@ -163,22 +163,30 @@ function closeNav() {
   overlay.style.visibility = "hidden";
 }
 
-// 수정 해야함
-const dropdownBtn = document.querySelectorAll(".dropdown-btn");
-const dropdownCtn = document.querySelectorAll(".dropdown-container");
+// sidenav
+// const dropdownBtn = document.querySelectorAll(".dropdown-btn");
+// const dropdownCtn = document.querySelectorAll(".dropdown-container");
 
-dropdownBtn.forEach((dBtn, idx) => {
-  dBtn.addEventListener("click", function () {
-    dropdownCtn.forEach((cBtn) => {
-      // console.log(cBtn);
-      cBtn.classList.remove("active");
-    });
-    dropdownBtn.forEach((item) => {
-      // console.log(item);
-      item.classList.remove("active");
-    });
+// dropdownBtn.forEach((dBtn, idx) => {
+//   dBtn.addEventListener("click", function () {
+//     dropdownCtn.forEach((cBtn) => {
+//       // console.log(cBtn);
+//       cBtn.classList.remove("active");
+//     });
+//     dropdownBtn.forEach((item) => {
+//       // console.log(item);
+//       item.classList.remove("active");
+//     });
 
-    dropdownBtn[idx].classList.add("active");
-    dropdownCtn[idx].classList.add("active");
-  });
-});
+//     dropdownBtn[idx].classList.add("active");
+//     dropdownCtn[idx].classList.add("active");
+
+//     if (dropdownBtn[idx].classList.contains("active")) {
+//       dropdownBtn[idx].classList.remove("active");
+//       // dropdownBtn[idx].addEventListener("click", function () {
+
+//       //   dropdownCtn[idx].classList.remove("active");
+//       // });
+//     }
+//   });
+// });
