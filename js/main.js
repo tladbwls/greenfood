@@ -39,7 +39,7 @@ window.onscroll = function () {
 const header = document.querySelector(".header");
 const sticky = header.offsetTop;
 function myFunction() {
-  console.log(scrollX);
+  // console.log(scrollX);
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
   } else {
@@ -194,11 +194,11 @@ function closeNav() {
 var accItem = document.getElementsByClassName("accordionItem");
 var accHD = document.getElementsByClassName("accordionItemHeading");
 for (i = 0; i < accHD.length; i++) {
-  console.log(accHD);
+  // console.log(accHD);
   accHD[i].addEventListener("click", toggleItem);
 }
 function toggleItem() {
-  console.log(this.parentNode.parentNode);
+  // console.log(this.parentNode.parentNode);
   var itemClass = this.parentNode.parentNode.className;
   for (i = 0; i < accItem.length; i++) {
     accItem[i].className = "accordionItem close";
@@ -207,3 +207,8 @@ function toggleItem() {
     this.parentNode.parentNode.className = "accordionItem open";
   }
 }
+
+// search item click
+const searchIcon = document.querySelector(".header .search");
+const searchBox = document.querySelector(".header .side-search");
+const searchClose = document.querySelector(".search-icon-2");

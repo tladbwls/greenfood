@@ -58,29 +58,32 @@
       </div>
       <div class="line"></div>
       <div class="side-txt">
-          
-          <div class="accordionItem open">
-            <div class="acc">
-              <a href="#">Greenmart</a>
-            <button class="accordionItemHeading">
-              <i class="ri-arrow-down-s-line"></i>
-            </button>
+        <ul>
+          <li>
+            <div class="accordionItem open">
+              <div class="acc">
+                <a href="#">Greenmart</a>
+              <button class="accordionItemHeading">
+                <i class="ri-arrow-down-s-line"></i>
+              </button>
+              </div>
+              
+              <div class="accordionItemContent">
+                <a href="#">브랜드 소개</a>
+                <a href="#">브랜드 스토리</a>
+                <a href="#">소개 영상</a>
+                <a href="#">상품 갤러리</a>
+              </div>
             </div>
-            
-            <div class="accordionItemContent">
-              <a href="#">브랜드 소개</a>
-              <a href="#">브랜드 스토리</a>
-              <a href="#">소개 영상</a>
-              <a href="#">상품 갤러리</a>
-            </div>
-          </div>
+          </li>
           
+        <li>
           <div class="accordionItem close">
             <div class="acc">
               <a href="#">제철농산물</a>
-            <button class="accordionItemHeading">
-              <i class="ri-arrow-down-s-line"></i>
-            </button>
+              <button class="accordionItemHeading">
+                <i class="ri-arrow-down-s-line"></i>
+              </button>
             </div>
             
             <div class="accordionItemContent">
@@ -88,10 +91,14 @@
               <a href="#">베스트</a>
             </div>
           </div>
-        <a href="#">알뜰쇼핑</a>
-        <a href="#">오늘배송</a>
-        <a href="#">공지사항</a>
-        <a href="#">위치</a>
+        </li>
+          
+        <li><a href="#">알뜰쇼핑</a></li>
+        <li><a href="#">오늘배송</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">위치</a></li>
+        </ul>
+        
       </div>
       
     </div>
@@ -105,11 +112,33 @@
             <p>JOIN</p>
           </div>
           <div class="icon">
-            <i class="ri-user-3-line"></i>
-            <i class="ri-shopping-cart-2-line cart">
+            <a href="#" title="마이페이지">
+               <i class="ri-user-3-line"></i>
+            </a>
+            <a href="#" title="쇼핑 카트">
+              <i class="ri-shopping-cart-2-line cart">
               <div class="cart-circle">0</div>
             </i>
-            <i class="ri-search-line"></i>
+            </a>
+            
+            <a href="#" title="상품 검색">
+              <i class="ri-search-line search" >
+                <div class="side-search active">
+                  <input type="search" placeholder="상품 검색">
+                  <div class="search-icon">
+                    <a href="#" title="검색 아이콘">
+                      <i class="ri-search-line search-icon-1"></i>
+                    </a>
+                    <a href="#" title="창닫기 아이콘">
+                      <i class="ri-close-circle-fill search-icon-2"></i>
+                    </a>
+                    
+                  </div>
+                  
+                </div>
+              </i>
+            </a>
+            
           </div>
         </div>
         <div class="header-nav">
@@ -135,8 +164,9 @@
                 <li><a href="#">베스트</a></li>
                 <li><a href="#">유기농</a> </li>
               </ul>
-            </div>
+              </div>
             </li>
+            
             <li><a href="#">알뜰쇼핑</a></li>
             <li><a href="#">오늘배송</a></li>
             <li><a href="#">공지사항</a></li>

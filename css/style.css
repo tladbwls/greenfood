@@ -2,6 +2,7 @@
 * {padding: 0; margin: 0; box-sizing: border-box; }
 ol, ul {list-style: none;}
 a {text-decoration: none; color: black;}
+li::marker{list-style: none;}
 
 /* common style */
 
@@ -13,6 +14,10 @@ a {text-decoration: none; color: black;}
 .title-box {width: 100%; height: auto; max-width: 1240px; margin: auto; padding-top: 5rem; padding-bottom: 3.5rem;}
 .title-box > h2 {font-size: 2rem; font-weight: 700; padding-bottom: 1.5rem;}
 .title-box > div {width: 100%; height: 3px; max-width: 1240px;  border: 2px solid #000; background: #000;}
+
+
+
+
 
 .img-boxes {display: flex; gap: 1.5rem;}
 .img-boxes .img-box {width: 25%; height: auto;}
@@ -108,9 +113,9 @@ a {text-decoration: none; color: black;}
  .sidenav .side-icon {width: 100%; height: auto; display: flex; align-items: center; padding: 1rem 0; justify-content: space-evenly;}
  .sidenav .side-icon .icon-box {display: flex;}
  .sidenav .side-icon .icon-box i {font-size: 25px;}
- .sidenav .side-icon .side-search {border: .5px solid #000; border-radius: .20rem;  display: flex; align-items: center; padding: 0 .25rem;}
- .sidenav .side-icon .side-search input {border: none; margin: auto; width: 180px; height: 30px;}
- .sidenav .side-icon .side-search i {font-size: 20px;}
+ .side-search {border: .5px solid #000; border-radius: .20rem;  display: flex; align-items: center; padding: 0 .25rem;}
+ .side-search input {border: none; margin: auto; width: 180px; height: 30px;}
+ .side-search i {font-size: 20px;}
 
  .sidenav .side-icon .icon-box .cart {position: relative;}
  .sidenav .side-icon .icon-box .cart .cart-circle {position: absolute; color: #fff; background: #000; border-radius: 50%; font-size: 3px; width: 15px; height: 15px; text-align: center; top: -4px; right: -4px;} 
@@ -119,7 +124,7 @@ a {text-decoration: none; color: black;}
 
  .sidenav .closebtn {position: absolute;top: -10px;right: 20px;font-size: 36px; }
  
- .accordionItem{float:left;display:block;width:100%;box-sizing: border-box;font-family:'Open-sans',Arial,sans-serif;}
+ .accordionItem{display:block;width:100%;box-sizing: border-box;font-family:'Open-sans',Arial,sans-serif;}
 .accordionItemHeading{cursor:pointer;}
 .close .accordionItemContent{height:0px;transition:height 1s ease-out;transform: scaleY(0);float:left;display:block;}
 .open .accordionItemContent{padding: 20px;background-color: #fff;width: 90%;margin: 10px auto;display:block;transform: scaleY(1);transform-origin: top;transition: transform 0.4s ease;box-sizing: border-box;background: #f3f3f3;}
@@ -127,7 +132,7 @@ a {text-decoration: none; color: black;}
 .open .accordionItemHeading{background-color: #bdc3c7;color: #7f8c8d;}
 .sidenav .side-txt .accordionItemContent a {font-size: 14px; color: #666;}
 
-.acc {display: flex;}
+.acc {display: flex; justify-content: space-between;}
  #main {_transition: margin-left .5s; _padding: 16px; display: none; position: fixed; right: 10px; top: 0px; z-index: 20;}
 
 .overlay{position:fixed; width:100%; height:100%; top:0; left:0; opacity:1; background:#ddd; visibility: hidden; z-index:100;}
@@ -150,13 +155,20 @@ a {text-decoration: none; color: black;}
 .header .login-header .icon .cart {position: relative;}
 .header .login-header .icon .cart .cart-circle {position: absolute; color: #fff; background: #000; border-radius: 50%; font-size: .2rem; width: 15px; height: 15px; text-align: center; top: -4px; right: 0;} 
 
+.header .search {position: relative;}
+.header .side-search {position: absolute; top: -5px; right: -8px; background: #fff; width: 250px; height: 36px; display: none;}
+.header .side-search.active {display: block;}
+.header .side-search .search-icon {display: flex; justify-content: flex-end; position: relative; top: -18px; align-items: center;}
+.header .side-search .search-icon .search-icon-1 {position: absolute; right: 25px;}
+.header .side-search .search-icon .search-icon-2{position: absolute; font-size: 1rem; color: #666;}
+
 
 .header .header-nav {display: flex; justify-content: space-between; _padding: 2rem ;}
 .header .nav-menu {display: flex; column-gap: 3rem;  font-weight: 700; font-size: 17px;} 
-.header .nav-menu .nav-menu-bar { height: auto; background: #555; border: 1px solid #555; min-width: 160px; _padding: 1rem;   display: none; flex-direction: column; position: absolute; z-index: 10;}
+.header .nav-menu .nav-menu-bar { height: auto; background: #333333; border: 1px solid #555; min-width: 160px; _padding: 1rem;   display: none; flex-direction: column; position: absolute; z-index: 10;}
 
 .header .nav-menu .nav-menu-bar li {padding: .5rem; border-bottom: .25px solid #efefef; display: flex; justify-content: flex-end;}
-.header .nav-menu .nav-menu-bar a {color: #fff; font-weight: 100; font-size: 14px; }
+.header .nav-menu .nav-menu-bar a {color: #b6b6b6; font-weight: 100; font-size: 14px; }
 .header-nav .grm:hover .nav-menu-bar {display: block;}
 
 
