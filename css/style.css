@@ -136,7 +136,7 @@ li::marker{list-style: none;}
  #main {_transition: margin-left .5s; _padding: 16px; display: none; position: fixed; right: 10px; top: 0px; z-index: 20;}
 
 .overlay{position:fixed; width:100%; height:100%; top:0; left:0; opacity:1; background:#ddd; visibility: hidden; z-index:100;}
-.overlay.active{z-index: 30;}
+.overlay.active{z-index: 40;}
 
 
 
@@ -144,7 +144,7 @@ li::marker{list-style: none;}
 /* header section */
 /* .header {position: fixed; width: 100%; padding: 1.75rem; z-index: 15; } */
 .header .header-container {width: 100%; height: auto; max-width: 1280px; margin: 0 auto;}
-.header .login-header {display: flex; justify-content: flex-end; column-gap: 2rem; margin: 1rem;} 
+.header .login-header {display: flex; justify-content: flex-end; column-gap: 2rem; margin: 1rem; position: relative;} 
 .header .login-header .login {display: flex; align-items: center; column-gap: 2rem; font-size: .8rem; color: #7a7a7a;}
 /* .header.sticky {display: none;} */
 
@@ -158,9 +158,9 @@ li::marker{list-style: none;}
 .header .search {position: relative;}
 .header .side-search {position: absolute; top: -5px; right: -8px; background: #fff; width: 250px; height: 36px; display: none;}
 .header .side-search.active {display: block;}
-.header .side-search .search-icon {display: flex; justify-content: flex-end; position: relative; top: -18px; align-items: center;}
-.header .side-search .search-icon .search-icon-1 {position: absolute; right: 25px;}
-.header .side-search .search-icon .search-icon-2{position: absolute; font-size: 1rem; color: #666;}
+.header .side-search .search-box {position: absolute; display: flex; align-items: center; justify-content: flex-end; top: 5px; right: 0;} 
+.header .side-search .search-box .search-icon-2 {font-size: 18px;}
+
 
 
 .header .header-nav {display: flex; justify-content: space-between; _padding: 2rem ;}
@@ -182,9 +182,9 @@ li::marker{list-style: none;}
 .slider-section .black-box {width: 100%; height: 100vh; position: absolute; background: black; opacity: .3;}
 
 .slider-section .slider-txts {position: absolute; color: white; display: flex; flex-direction: column; align-items: flex-start; margin: auto;}
-.slider-section .slider-txts .text-1 {font-weight: 900; font-size: 3rem;}
-.slider-section .slider-txts .text-2 {font-weight: 300; font-size: 3rem;}
-.slider-section .slider-txts .text-3 {font-weight: 500; font-size: 2rem; padding: 2rem 0;}
+.slider-section .slider-txts .text-1 {font-weight: 900; font-size: 2.5rem;}
+.slider-section .slider-txts .text-2 {font-weight: 300; font-size: 2.5rem;}
+.slider-section .slider-txts .text-3 {font-weight: 500; font-size: 1.5rem; padding: 2rem 0;}
 .slider-section .slider-txts .text-4 {font-weight: 400; font-size: 2rem;}
 
 

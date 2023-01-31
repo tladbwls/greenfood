@@ -63,34 +63,6 @@ function myFunction() {
 //   }
 // }, 250);
 
-// const menu = document.querySelector(".menu");
-// const toggle_menu = document.querySelector(".menu-toggle");
-
-// toggle_menu.addEventListener("click", function () {
-//   this.classList.toggle("active");
-//   console.log(this);
-//   if (toggle_menu.classList.contains("active")) {
-//     menu.classList.add("active");
-//   } else {
-//     menu.classList.remove("active");
-//   }
-// });
-
-// // toggle.addEventListener("click", toggleclick);
-// const overlay = document.querySelector(".overlay");
-// function openNav() {
-//   document.getElementById("menuToggle").style.width = "250px";
-//   overlay.style.backgroundColor = "rgba(0,0,0,0.4)";
-//   // overlay.style.visibility = "visible";
-//   // overlay.style.opacity = 1;
-// }
-
-// function closeNav() {
-//   document.getElementById("menu").style.width = "0";
-//   overlay.style.backgroundColor = "white";
-//   // overlay.visibility = "hidden";
-// }
-
 //sidemenu
 const btns = document.querySelector(".main-toggle");
 const panel = document.querySelectorAll(".sidenav");
@@ -137,6 +109,16 @@ close.forEach(function (b) {
   b.addEventListener("click", function () {
     b.classList.remove("active");
     if (!b.classList.contains("active")) {
+      btns.classList.remove("active");
+      btns.nextSibling.nextSibling.classList.remove("active");
+      overlay.classList.remove("active");
+      hamburger.classList.remove("active");
+    }
+  });
+
+  overlay.addEventListener("click", function () {
+    overlay.classList.remove("active");
+    if (!overlay.classList.contains("active")) {
       btns.classList.remove("active");
       btns.nextSibling.nextSibling.classList.remove("active");
       overlay.classList.remove("active");
@@ -212,3 +194,19 @@ function toggleItem() {
 const searchIcon = document.querySelector(".header .search");
 const searchBox = document.querySelector(".header .side-search");
 const searchClose = document.querySelector(".search-icon-2");
+
+searchIcon.addEventListener("click", function () {
+  searchIcon.classList.toggle("active");
+  if (searchIcon.classList.contains("active")) {
+    searchBox.classList.add("active");
+    searchClose.classList.add("active");
+  }
+});
+
+searchClose.addEventListener("click", function () {
+  searchClose.classList.remove("active");
+  if (!searchClose.classList.contains("active")) {
+    searchIcon.classList.remove("active");
+    searchBox.classList.remove("active");
+  }
+});
