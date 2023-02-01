@@ -5,10 +5,10 @@ var swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  speed: 1000,
+  speed: 2000,
 
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   loop: false,
@@ -119,10 +119,9 @@ close.forEach(function (b) {
   overlay.addEventListener("click", function () {
     overlay.classList.remove("active");
     if (!overlay.classList.contains("active")) {
-      btns.classList.remove("active");
-      btns.nextSibling.nextSibling.classList.remove("active");
-      overlay.classList.remove("active");
+      closeNav();
       hamburger.classList.remove("active");
+      btns.classList.remove("active");
     }
   });
 });
@@ -135,6 +134,7 @@ function openNav() {
   overlay.style.backgroundColor = "rgba(0,0,0,0.4)";
   overlay.style.visibility = "visible";
   overlay.style.opacity = 1;
+  hamburger.classList.add("active");
 }
 
 function closeNav() {
