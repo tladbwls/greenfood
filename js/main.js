@@ -31,22 +31,6 @@ var swiper = new Swiper(".recomend-swiper", {
   },
 });
 
-// sticky header
-window.onscroll = function () {
-  myFunction();
-};
-
-const header = document.querySelector(".header");
-const sticky = header.offsetTop;
-function myFunction() {
-  // console.log(scrollX);
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
 // var didScroll;
 // var lastScrollTop = 0;
 // var delta = 5;
@@ -189,24 +173,3 @@ function toggleItem() {
     this.parentNode.parentNode.className = "accordionItem open";
   }
 }
-
-// search item click
-const searchIcon = document.querySelector(".header .search");
-const searchBox = document.querySelector(".header .side-search");
-const searchClose = document.querySelector(".search-icon-2");
-
-searchIcon.addEventListener("click", function () {
-  searchIcon.classList.toggle("active");
-  if (searchIcon.classList.contains("active")) {
-    searchBox.classList.add("active");
-    searchClose.classList.add("active");
-  }
-});
-
-searchClose.addEventListener("click", function () {
-  searchClose.classList.remove("active");
-  if (!searchClose.classList.contains("active")) {
-    searchIcon.classList.remove("active");
-    searchBox.classList.remove("active");
-  }
-});

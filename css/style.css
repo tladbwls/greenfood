@@ -147,7 +147,7 @@ li::marker{list-style: none;}
 .header .login-header {display: flex; justify-content: flex-end; column-gap: 2rem; margin: 1rem; position: relative;} 
 .header .login-header .login {display: flex; align-items: center; column-gap: 2rem; font-size: .8rem; color: #7a7a7a;}
 /* .header.sticky {display: none;} */
-
+.header.sticky  {position: fixed; top: 0; width: 100%; background: #fff; z-index: 15;}
 
 .header .header-container .a {margin-bottom: 2rem;}
 

@@ -71,7 +71,7 @@ transform: none;
 
 .price-1 {font-size: .8rem;}
 
-.slider-section .slider-txts {align-items: center;}
+.slider-section .slider-txts {align-items: center; left: auto;}
 .slider-section .slider-txts .text-1 {font-size: 2rem;}
 
 .recomend-section .recomend-container {flex-direction: column;}
