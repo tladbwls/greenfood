@@ -25,12 +25,17 @@
     <section class="section login-section">
       <h2 class="sign-in">로그인</h2>
       <form>
-        <p><input type="text" placeholder="아이디" name="id" class="id" /></p>
+        <p><input type="text" placeholder="아이디 또는 이메일" name="id" class="id" /></p>
         <p><input type="password"  placeholder="비밀번호"  name="pwd"  class="pwd" /></p>
         <div class="sign-contents">
-          <p  class="id-save">
-          <input type="checkbox">
-          <p>아이디저장</p>
+          <!-- <p class="id-save">
+            <input type="checkbox">
+            <p>아이디저장</p>
+          </p> -->
+          <p class="id-save">
+            <input type="checkbox" id="check-box">
+            <label for="check-box" class="label1"></label>
+            <label for="check-box" class="label2">아이디저장</label>
           </p>
           <p class="sign-menu">
             <a href="#">아이디찾기 |</a>

@@ -31,42 +31,12 @@ var swiper = new Swiper(".recomend-swiper", {
   },
 });
 
-// var didScroll;
-// var lastScrollTop = 0;
-// var delta = 5;
-// var navbarHeight = $("header").outerHeight();
-
-// $(window).scroll(function (event) {
-//   didScroll = true;
-// });
-
-// setInterval(function () {
-//   if (didScroll) {
-//     hasScrolled();
-//     didScroll = false;
-//   }
-// }, 250);
-
 //sidemenu
 const btns = document.querySelector(".main-toggle");
 const panel = document.querySelectorAll(".sidenav");
 const close = document.querySelectorAll(".closebtn");
 const overlay = document.querySelector(".overlay");
 const hamburger = document.querySelector(".hamburger");
-
-// btns.forEach(function (a) {
-//   // console.log(a);
-//   a.addEventListener("click", function () {
-//     this.classList.toggle("active");
-//     // this.sibling.classList.add("active");
-//     if (this.classList.contains("active")) {
-//       // console.log(this.nextSibling.nextSibling.childNodes);
-//       this.nextSibling.nextSibling.classList.add("active");
-//     } else {
-//       this.nextSibling.nextSibling.classList.remove("active");
-//     }
-//   });
-// });
 
 close.forEach(function (b) {
   btns.addEventListener("click", function () {
@@ -128,34 +98,6 @@ function closeNav() {
   overlay.style.backgroundColor = "white";
   overlay.style.visibility = "hidden";
 }
-
-// sidenav
-// const dropdownBtn = document.querySelectorAll(".dropdown-btn");
-// const dropdownCtn = document.querySelectorAll(".dropdown-container");
-
-// dropdownBtn.forEach((dBtn, idx) => {
-//   dBtn.addEventListener("click", function () {
-//     dropdownCtn.forEach((cBtn) => {
-//       // console.log(cBtn);
-//       cBtn.classList.remove("active");
-//     });
-//     dropdownBtn.forEach((item) => {
-//       // console.log(item);
-//       item.classList.remove("active");
-//     });
-
-//     dropdownBtn[idx].classList.add("active");
-//     dropdownCtn[idx].classList.add("active");
-
-//     if (dropdownBtn[idx].classList.contains("active")) {
-//       dropdownBtn[idx].classList.remove("active");
-//       // dropdownBtn[idx].addEventListener("click", function () {
-
-//       //   dropdownCtn[idx].classList.remove("active");
-//       // });
-//     }
-//   });
-// });
 
 var accItem = document.getElementsByClassName("accordionItem");
 var accHD = document.getElementsByClassName("accordionItemHeading");

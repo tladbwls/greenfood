@@ -242,8 +242,8 @@ li::marker{list-style: none;}
 .hot-section .hot-txt-boxes .hot-title-box .txt-bottom {display: flex; column-gap: .75rem; text-align: center; justify-content: center;}
 
 /* footer */
-.footer {width: 100%; height: auto; margin: auto; background: rgb(248,248,248); padding: 2rem; border-top: 1px solid rgb(209, 209, 209)} 
+.footer {width: 100%; height: auto; margin: auto; background: rgb(248,248,248); padding: 2rem; border-top: 1px solid rgb(209, 209, 209); }  
 
-.footer .footer-section {width: 100%; height: auto; max-width: 1240px; margin: auto;} 
+.footer .footer-section {width: 100%; height: auto; max-width: 1240px; margin: auto; bottom: 0;} 
 .footer .footer-txt p {margin: .5rem 0;}
 .footer .footer-section .copy {font-size: 1rem; color: #7a7a7a;}
