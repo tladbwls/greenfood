@@ -1,22 +1,20 @@
 .wrapper {width: 100%; height: 100%;}
-.login-section {width: 100%; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 3rem 0;}
+.login-section {width: 100%; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 10rem 0;}
 .login-section form {display: flex; flex-direction: column; gap: .5rem; padding-top: 2rem;}
-.login-section form p input{width: 400px; height: 60px; border: 1px solid rgb(216, 216, 216);}
+.login-section form p input{width: 400px; height: 60px; border: 1px solid rgb(216, 216, 216); padding: 0 .5rem;}
 
 .sign-contents {color: #666; font-size: 15px; display: flex; justify-content: space-between; padding-top: 1rem;}
 .sign-contents .id-save {display: flex; gap: .25rem;}
+.sign-contents .sign-menu a {color: #666;}
 
 
-input#check-box {width: 15px; height: 15px;}
+input#check-box {width: 15px; height: 15px; display: none;}
 /* input#check-box+label{width: 15px; height: 15px; border: 1px solid #666; cursor: pointer;} */
-label.label1::before {content: "\f14a"; width: 15px; height: 15px; border: 1px solid #333;}
-input#check-box:checked+label::before{content: "\f14a";  background-color: #333;}
-
-
-
-
-
-.sign-contents a {color: #666;}
+label.label1::before {content: ""; width: 15px; height: 15px; border: 1px solid #333; display: inline-block; border-radius: 3px;}
+input#check-box:checked+label::before{background-color: #333; }
+label.label1 {position: relative;}
+label.label1 i  {position: absolute; top: 0; left: 0;}
+input#check-box:checked+label i {color: #fff;}
 
 .login-section .send-btn {width: 100%; height: 45px; padding: 1rem 0;}
 .login-section .send-btn input {color: #fff; background: #333; border-radius: .25rem;}
